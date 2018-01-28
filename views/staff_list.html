@@ -1,0 +1,47 @@
+{% extends 'staff.html' %}
+{% block content %}
+<h1 class="text-center">Our Staff</h1>
+
+      <hr>
+
+      <div class="row text-center">
+          
+          {% for staff in staffs %}
+            <div class="col-lg-4">
+                    <br><br>
+                <img class="rounded-circle" src="static/img/prog.png" alt="Generic placeholder image" width="140" height="140">
+                <h4>{{ staff.names }}</h4>
+                <p>{{ staff.role }}</p>
+                <div>
+                    <a href="staff/edit/{{ staff.id }}"><button type="button" class="btn-primary">Edit</button></a>
+                    <a href="staff/delete/{{ staff.id }}"><button type="button" class="btn-danger">Delete</button></a>
+                </div>
+            </div><!-- /.col-lg-4 -->
+        {% endfor %}
+       
+
+      </div>
+      <hr>
+
+
+      <h1 class="text-center">Add Staff</h1>
+
+      <div class="row">
+
+          <div class="col-md-8 col-center-block">
+                <form action="staff" method="post">
+                    <div class="form-group">
+                        <input type="text" name="names" class="form-control" required  placeholder="Enter Staff Names Here">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="role" class="form-control" required  placeholder="Enter Staff Role Here">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile"><em>Add Staff Image</em> </label>
+                        <input type="file" class="form-control-file" name="myfile">
+                    </div>
+                    <p><input class="btn-primary" type="submit" value="Add Staff"></p>
+                </form>
+          </div>    
+    </div>
+{% endblock %}

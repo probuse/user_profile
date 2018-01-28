@@ -1,0 +1,38 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery (https://startbootstrap.com/template-overviews/thumbnail-gallery)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-thumbnail-gallery/blob/master/LICENSE)
+ */
+
+ #content {
+  overflow: scroll;
+ }
+
+ body {
+    padding-top: 54px;
+  }
+
+  /* Keep footer at the bottom */
+  footer{
+    bottom: 0%;
+    position: absolute;
+    position: fixed;
+    height: 114px;
+    width: 100%;
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+      padding-bottom: 130px;
+    }
+  }
+
+  .col-center-block {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+
+  
