@@ -7,21 +7,6 @@ db = web.database(dbn='postgres', user='rekah', pw='etwin', db='webpy_test')
 
 view = render_jinja('views', encoding='utf-8')
 
-
-class Add:
-    def POST(self):
-        i = web.input()
-        db.insert('myuser', name=i.name, age=i.age, bio=i.bio, fav_food=i.fav_food)
-        raise web.seeother('/users')
-
-
-class Hello:
-    def GET(self, name):
-        users = db.select('myuser')
-        context = {'name': name, 'users': users}
-        return view.hello(context)
-
-
 class Staff:
     def GET(self, id=None):
         staffs = db.select('staff')
