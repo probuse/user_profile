@@ -1,21 +1,22 @@
 # A CRUD Application with webpy
 
 ## How to install:
-Make Sure You have Python 2.7 installed
-install the project dependencies from requirements.txt ie run pip install -r requirements.txt in your terminal
+1. Make Sure You have Python 2.7 installed
+2. install the project dependencies from requirements.txt 
+> ie run `pip install -r requirements.txt` in your terminal
 
 ## How To run it
-once the installations are out of the way,
-run python __init__.py
-This will run the server on port 8080
-You can check it out in your browser at http://localhost:8080/staff
+once the installations are out of the way:
+- run `python __init__.py`
+> This will run the server on port 8080
+> You can check it out in your browser at `http://localhost:8080/staff`
 
 ## And this is how the site will look like.
-[Staff Home Page
+###Staff Home Page
 ![Staff Home Page](https://raw.githubusercontent.com/probuse/user_profile/master/sample_images/staff_home.png)
 
-Adding New Staff
+###Adding New Staff
 ![Adding New Staff](https://raw.githubusercontent.com/probuse/user_profile/master/sample_images/add_staff.png)
 
-Editing Added Staff
+###Editing Added Staff
 ![Editing Added Staff](https://raw.githubusercontent.com/probuse/user_profile/master/sample_images/editing.png)
