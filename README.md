@@ -11,4 +11,11 @@ This will run the server on port 8080
 You can check it out in your browser at http://localhost:8080/staff
 
 ## And this is how the site will look like.
+[Staff Home Page
 ![Staff Home Page](https://raw.githubusercontent.com/probuse/user_profile/master/sample_images/staff_home.png)
+
+Adding New Staff
+![Adding New Staff](https://raw.githubusercontent.com/probuse/user_profile/master/sample_images/add_staff.png)
+
+Editing Added Staff
+![Editing Added Staff](https://raw.githubusercontent.com/probuse/user_profile/master/sample_images/editing.png)
